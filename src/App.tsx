@@ -87,7 +87,7 @@ function App() {
       <div className='flex flex-row mt-52 w-full items-center'>
         <img src={logoSvg} alt="" />
         <h1 className='text-3xl text-white font-black ml-6'>
-          SeachCocktail
+          SearchCocktail
         </h1>
       </div>
       <div>

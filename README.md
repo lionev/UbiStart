@@ -1,4 +1,4 @@
-# SeachCocktail
+# SearchCocktail
 
 ![preview](./.github/Home.png)
 
