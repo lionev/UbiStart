@@ -1,8 +1,9 @@
 import react, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { DrinksBanner } from '../components/DrinksBanner'
 import { useApi } from '../hooks';
 import logoSvg from '../assets/logo.svg'
+import { ArrowLeft } from 'phosphor-react';
 
 
 type DrinksBannerProps = {
@@ -19,11 +20,20 @@ type DrinksBannerProps = {
 }
 
 
+
+
 export function DrinkForCategory() {
   const [drinks, setDrinks] = useState<DrinksBannerProps[]>([])
   const params = useParams()
 
   const api = useApi()
+
+  const navigate = useNavigate()
+
+  function handleBackButton() {
+    navigate(-1)
+  }
+
 
   const category = params.strCategory?.replace('_', '/')
 
@@ -35,11 +45,19 @@ export function DrinkForCategory() {
 
   return (
     <div className='max-w-[1344px] mx-auto flex flex-col items-center my-18'>
-      <div className='mt-10 flex gap-2 flex-row'>
-        <img src={logoSvg} alt="" />
-        <h1 className='text-3xl text-white font-black'>
-          {category}
-        </h1>
+      <div className='flex flex-row w-full items-center mt-10 gap-2'>
+        <button onClick={handleBackButton}>
+          <ArrowLeft
+            size={24}
+            color='white'
+          />
+        </button>
+        <div className='flex gap-2 flex-row'>
+          <img src={logoSvg} alt="" />
+          <h1 className='text-3xl text-white font-black'>
+            {category}
+          </h1>
+        </div>
       </div>
 
       <div className='grid grid-cols-6 gap-6 mt-16'>
