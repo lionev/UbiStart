@@ -91,13 +91,13 @@ function App() {
         </h1>
       </div>
       <div>
-        <div className='flex self-stretch mt-8 items-center w-[1344px] absolute'>
+        <div className='flex self-stretch mt-7 items-center w-[1344px] absolute'>
           <Input
             id='strDrink'
             type='text'
             value={inputDrink}
             onChange={(e) => setInputDrink(e.target.value)}
-            placeholder='Escreva o drink'
+            placeholder='Encontre o seu drink'
             listOptions={drinkNames}
           >
             <button
