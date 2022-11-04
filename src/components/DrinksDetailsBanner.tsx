@@ -35,7 +35,7 @@ export function DrinksDetailsBanner({
   return (
 
     <div className="w-full h-full flex overflow-hidden bg-zinc-900">
-      <img src={strDrinkThumb} className="rounded-lg  bg-red-500 resize max-w-lg" />
+      <img src={strDrinkThumb} className="rounded-lg bg-red-500 resize max-w-lg" />
 
 
       <div className="flex flex-col p-24">
