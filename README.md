@@ -2,8 +2,6 @@
 
 ![preview](./.github/Home.png)
 
-Projeto construído no intuito de facilitar a procura por alguns drinks.
-
 ## 🦾 Tecnologias
 
 - ReactJs com Typescript
