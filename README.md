@@ -1,6 +1,6 @@
 # SeachCocktail
 
-![preview](./.github/home.png)
+![preview](./.github/Home.png)
 
 Projeto construído no intuito de facilitar a procura por alguns drinks.
 
