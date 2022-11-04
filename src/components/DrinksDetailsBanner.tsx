@@ -43,7 +43,8 @@ export function DrinksDetailsBanner({
         <h1 className="text-white">{strAlcoholic}</h1>
 
         <div className="mt-1">
-          <p className="text-zinc-300">Category: {''} {strCategory} Glass: {strGlass}</p>
+          <p className="text-zinc-300">Category: {''} {strCategory}</p>
+          <p className="text-zinc-300"> Glass: {strGlass}</p>
         </div>
 
         <div className="mt-6">
